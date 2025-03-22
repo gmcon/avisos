@@ -1,11 +1,6 @@
 {
   "avisos": [
     {
-      "titulo": "aviso 2",
-      "texto": "<font color=red>IMPORTANTE</font><br><br>\n\ndeben entregar hoy",
-      "fecha": "2025-03-22"
-    },
-    {
       "titulo": "proxima tareas",
       "texto": "no olvides que<br><br>\n- esto<br>\n- <b>esto otro</b><br><br>\n\n<font color=red>suerte</font><br><img src=\"C:/Users/gcont/Desktop/_cosasMias/DIARIO_EL_MECURIO/2025_03_20/img/1.jpg\" alt=\"Imagen aviso\">",
       "fecha": "2025-03-22"
