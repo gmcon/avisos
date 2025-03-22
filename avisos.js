@@ -1,3 +1,21 @@
+// Registrar acceso del alumno
+let alumnoID = localStorage.getItem("alumno_id");
+if (!alumnoID) {
+  alumnoID = prompt("Ingresa tu nombre o ID:");
+  if (alumnoID) {
+    localStorage.setItem("alumno_id", alumnoID);
+  }
+}
+
+if (alumnoID) {
+  fetch("https://accesos-pwa.onrender.com/registro", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ id: alumnoID, fecha: new Date().toISOString() })
+  });
+}
+
+// Mostrar avisos
 fetch('avisos.json')
   .then(response => response.json())
   .then(data => {
@@ -9,3 +27,4 @@ fetch('avisos.json')
       contenedor.appendChild(div);
     });
   });
+
