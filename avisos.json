@@ -1,11 +1,6 @@
 {
   "avisos": [
     {
-      "titulo": "proxima tareas",
-      "texto": "no olvides que\n- esto\n- <b>esto otro</b>\n\n<font color=red>suerte</font><br><img src=\"C:/Users/gcont/Desktop/_cosasMias/DIARIO_EL_MECURIO/2025_03_20/img/1.jpg\" alt=\"Imagen aviso\">",
-      "fecha": "2025-03-22"
-    },
-    {
       "titulo": "Ejemplo de aviso",
       "texto": "Este es un mensaje de prueba generado por la aplicación local.<br><img src='https://via.placeholder.com/300' style='max-width:100%; margin-top:10px;'>",
       "fecha": "2025-03-22"
