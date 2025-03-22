@@ -1,11 +1,6 @@
 {
   "avisos": [
     {
-      "titulo": "Ejemplo de aviso",
-      "texto": "Este es un mensaje de prueba generado por la aplicación local.<br><img src='https://via.placeholder.com/300' style='max-width:100%; margin-top:10px;'>",
-      "fecha": "2025-03-22"
-    },
-    {
       "titulo": "Bienvenida",
       "texto": "Revisa esta app todos los días.",
       "fecha": "2025-03-22"
