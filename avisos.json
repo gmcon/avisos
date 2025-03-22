@@ -1,11 +1,6 @@
 {
   "avisos": [
     {
-      "titulo": "aviso 4",
-      "texto": "<h3><font color=blue>BRAVOOO!!</font></h3>\n\nEn esta semana trataremos un tema muy importante de modo que te solcito que no faltes, debemos lograr que el tema se entienda a fin de que puedan usarlo corréctamente en su aplicacón<br><br>\n\nSi tienen dudas hagan consultas en el foro",
-      "fecha": "2025-03-22"
-    },
-    {
       "titulo": "aviso 3",
       "texto": "<font color=red><h3>muy importante</h3></font><br>\n<font color=blue>la fecha de entrega es </font>",
       "fecha": "2025-03-22"
