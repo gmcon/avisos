@@ -8,7 +8,8 @@ if (!alumnoID) {
 }
 
 if (alumnoID) {
-    fetch("https://accesos-pwa.onrender.com/registro", {
+    ###### proyectos render accesosPWA para usar con el fetch("https://accesos-pwa.onrender.com/registro", {
+    fetch("https://accesos-sqlite.onrender.com/registro", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: alumnoID, fecha: new Date().toISOString() })
