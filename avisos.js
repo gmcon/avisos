@@ -8,11 +8,14 @@ if (!alumnoID) {
 }
 
 if (alumnoID) {
-  fetch("https://accesos-pwa.onrender.com/registro", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ id: alumnoID, fecha: new Date().toISOString() })
-  });
+    fetch("https://accesos-pwa.onrender.com/registro", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id: alumnoID, fecha: new Date().toISOString() })
+    })
+    .then(response => response.json())
+    .then(data => console.log("✔ Registro enviado:", data))
+    .catch(error => console.error("❌ Error al registrar acceso:", error));
 }
 
 // Mostrar avisos
