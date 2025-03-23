@@ -7,6 +7,12 @@ if (!alumnoID) {
   }
 }
 
+// Para pruebas o cambios de ID
+if (location.search.includes("resetid")) {
+  localStorage.removeItem("alumno_id");
+  location.href = location.origin; // recarga sin el parámetro
+}
+
 if (alumnoID) {
     ###### proyectos render accesosPWA para usar con el fetch("https://accesos-pwa.onrender.com/registro", {
     fetch("https://accesos-sqlite.onrender.com/registro", {
