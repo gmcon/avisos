@@ -8,7 +8,7 @@ if (!alumnoID) {
 }
 
 // Para pruebas o cambios de ID
-if (location.search.includes("resetid")) {
+if (location.search.includes("r")) {
   localStorage.removeItem("alumno_id");
   location.href = location.origin; // recarga sin el parámetro
 }
