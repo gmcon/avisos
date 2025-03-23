@@ -1,16 +1,18 @@
 // Registrar acceso del alumno
+//
+// Cambiar ID (para pruebas o cambios)
+if (location.search.includes("r")) {
+  localStorage.removeItem("alumno_id");
+  location.href = location.origin; // recarga sin el parámetro
+}
+
+// para registrarse en primer acceso
 let alumnoID = localStorage.getItem("alumno_id");
 if (!alumnoID) {
   alumnoID = prompt("Ingresa tu nombre o ID:");
   if (alumnoID) {
     localStorage.setItem("alumno_id", alumnoID);
   }
-}
-
-// Para pruebas o cambios de ID
-if (location.search.includes("r")) {
-  localStorage.removeItem("alumno_id");
-  location.href = location.origin; // recarga sin el parámetro
 }
 
 if (alumnoID) {
