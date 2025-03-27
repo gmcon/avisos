@@ -1,9 +1,14 @@
 {
   "avisos": [
     {
+      "titulo": "Nuevo Aviso",
+      "texto": "---------------------------------------------------------------------------------------",
+      "fecha": "2025-03-27 16:57"
+    },
+    {
       "titulo": "YA COMIENZAN LAS ACCIONES",
       "texto": "Al inicio de esta semana cada uno debería haber seleccionado los <font color='red'>tres proyectos<font color='black'> que más le interesaron y <font color='red'>subido<font color='black'> un PDF justificando y explicando su elección<br><br>Luego...<br><br>Cada grupo decide cuales serán, <font color='blue'>de entre los seleccionados por cada integrante<font color='black'>, <font color='red'>los dos proyectos que desarrollarán durante el semestre<font color='black'><br><br>Esos dos proyectos <font color='red'>deben ser de distinta categoría de complejidad<font color='black'> (A, B o C)<br><br>Comienzan a preparar <font color='red'>el informe que se debe subir antes de las 22:00 de este domingo 30 de marzo<font color='black'> (deben incluir los <font color='red'>criterios y argumentos<font color='black'> usado para decidirse por esos dos proyectos)<br><br>(toda actividad con \"entregas\" es calificada)<br><br>-------------------------------------------------------------------------------------------------------------------------------------",
       "fecha": "2025-03-27 09:46"
-   }
+    }
   ]
 }
