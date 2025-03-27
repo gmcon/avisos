@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="theme-color" content="#0077cc"/>
-  <link rel="manifest" href="manifest.json"/>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avisos del Profesor</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="avisos.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Avisos del Profesor</h1>
-  </header>
-  <main id="avisos"></main>
-  <footer>
-    <p>Revisar cada día al comenzar y terminar la jornada.</p>
-  </footer>
-  <script src="avisos.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js');
+  <main>
+    <h1>Avisos Importantes</h1>
+    <div id="avisos"></div>
+  </main>
+
+<button id="installButton" style="display:none;position:fixed;bottom:20px;left:20px;padding:10px 15px;background:#00509e;color:white;border:none;border-radius:6px;font-size:1em;z-index:1000;">
+  📲 Instalar esta app
+</button>
+
+<script>
+  let deferredPrompt;
+  const installBtn = document.getElementById('installButton');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault(); // Evita que el navegador muestre el prompt automático
+    deferredPrompt = e;
+    installBtn.style.display = 'block';
+  });
+
+  installBtn.addEventListener('click', () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(choiceResult => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('✅ El usuario aceptó la instalación');
+        } else {
+          console.log('❌ El usuario canceló la instalación');
+        }
+        deferredPrompt = null;
+        installBtn.style.display = 'none';
+      });
     }
-  </script>
+  });
+
+  // Ocultar botón si ya está instalada
+  window.addEventListener('appinstalled', () => {
+    console.log('✅ PWA instalada');
+    installBtn.style.display = 'none';
+  });
+</script>
+
 </body>
 </html>
