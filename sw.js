@@ -1,37 +1,44 @@
 const CACHE_NAME = "avisos-cache-v4";
-const FILES_TO_CACHE = [
-  './',
-  './index.html',
-  './style.css',
-  './avisos.js',
-  './avisos.json',
-  './manifest.json',
-  './icon.png',
-  './icon512.png'
+const ARCHIVOS_A_CACHEAR = [
+  "./",
+  "./index.html",
+  "./style.css",
+  "./avisos.js",
+  "./avisos.json",
+  "./manifest.json",
+  "./icon.png",
+  "./icon512.png"
 ];
 
-self.addEventListener('install', (event) => {
+self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(FILES_TO_CACHE);
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.addAll(ARCHIVOS_A_CACHEAR);
     })
   );
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener("activate", event => {
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(keys.map((key) => {
-        if (key !== CACHE_NAME) return caches.delete(key);
-      }))
-    )
+    caches.keys().then(keys => {
+      return Promise.all(
+        keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))
+      );
+    })
   );
 });
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener("fetch", event => {
+  if (event.request.method !== "GET") return;
+
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
+    caches.match(event.request).then(cached => {
+      return (
+        cached ||
+        fetch(event.request).then(response => {
+          return response;
+        })
+      );
     })
   );
 });
