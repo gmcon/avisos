@@ -1,4 +1,4 @@
-const CACHE_NAME = "avisos-cache-v4";
+const CACHE_NAME = "avisos-cache-v5";
 const ARCHIVOS_A_CACHEAR = [
   "./",
   "./index.html",
