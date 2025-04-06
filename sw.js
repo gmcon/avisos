@@ -1,4 +1,4 @@
-const CACHE_NAME = 'avisos-cache-v5';
+const CACHE_NAME = 'avisos-cache-v6';  // Cambiar versión aquí
 const FILES_TO_CACHE = [
   './',
   './index.html',
@@ -17,24 +17,24 @@ self.addEventListener('install', event => {
       return cache.addAll(FILES_TO_CACHE);
     })
   );
-  self.skipWaiting(); // Activa el nuevo SW inmediatamente
+  self.skipWaiting(); // Activa inmediatamente este SW
 });
 
 self.addEventListener('activate', event => {
   console.log('Service Worker activado');
   event.waitUntil(
-    caches.keys().then(keys => {
-      return Promise.all(
+    caches.keys().then(keys =>
+      Promise.all(
         keys.map(key => {
           if (key !== CACHE_NAME) {
             console.log('Borrando caché antigua:', key);
             return caches.delete(key);
           }
         })
-      );
-    })
+      )
+    )
   );
-  return self.clients.claim(); // Toma control de todas las páginas abiertas
+  return self.clients.claim(); // Toma control sin necesidad de recargar
 });
 
 self.addEventListener('fetch', event => {
