@@ -1,4 +1,4 @@
-const CACHE_NAME = 'avisos-cache-v6';  // Cambiar versión aquí
+const CACHE_NAME = 'avisos-cache-v7';  // Cambiar versión aquí
 const FILES_TO_CACHE = [
   './',
   './index.html',
