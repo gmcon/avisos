@@ -2,6 +2,11 @@
   "avisos": [
     {
       "titulo": "Nuevo Aviso",
+      "texto": "Días atrás les envié un mensaje de correo indicando que _a_bnadie debe faltar a la única sesión presencial de cada semana_n_v. Luego otro informando que _a_bla asistencia la evaluaría como una nota más._v_n<br>\n<br>\nAhora les informo lo siguiente: _b_rnadie debe faltar este lunes 14 y martes 15 pues se realizará una evaluación individual respecto del primer proyecto que desarrollarán_b_n",
+      "fecha": "2025-04-11 19:53"
+    },
+    {
+      "titulo": "Nuevo Aviso",
       "texto": "_r_bEl martes 15 nadie falte_v pues se realizará una _bevaluación individual_v respecto del _bprimer proyecto_v a desarrollar_n",
       "fecha": "2025-04-11 00:23"
     },
