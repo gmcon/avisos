@@ -2,6 +2,11 @@
   "avisos": [
     {
       "titulo": "Nuevo Aviso",
+      "texto": "_r_bEl martes 15 nadie falte_v pues se realizará una _bevaluación individual_v respecto del _bprimer proyecto_v a desarrollar_n",
+      "fecha": "2025-04-11 00:23"
+    },
+    {
+      "titulo": "Nuevo Aviso",
       "texto": "_r_bEl lunes 14 nadie falte_v pues se realizará una _bevaluación individual_v respecto del _bprimer proyecto_v a desarrollar_n",
       "fecha": "2025-04-11 00:22"
     },
