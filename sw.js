@@ -1,10 +1,9 @@
-const CACHE_NAME = 'avisos-cache-v7';  // Cambiar versión aquí
+const CACHE_NAME = 'avisos-cache-vFINAL';  // Cambiar versión aquí
 const FILES_TO_CACHE = [
   './',
   './index.html',
   './style.css',
   './avisos.js',
-  './avisos.json',
   './manifest.json',
   './icon.png',
   './icon512.png'
