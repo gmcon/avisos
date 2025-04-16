@@ -1,14 +1,16 @@
-[
-  {
-    "fecha": "2025-04-11 19:53",
-    "mensaje": "Días atrás les envié un mensaje de correo indicando que <font color='blue'>nadie debe faltar a la única sesión presencial de cada semana<font color='black'>. Luego otro informando que <font color='blue'>la asistencia la evaluaría como una nota más.<font color='black'><br>\n<br>\nAhora les informo lo siguiente: <font color='red'>nadie debe faltar este lunes 14 y martes 15 pues se realizará una evaluación individual respecto del primer proyecto que desarrollarán<font color='black'>"
-  },
-  {
-    "fecha": "2025-04-05 23:47",
-    "mensaje": "ASISTENCIA<br>\n<br>\nLa asistencia de la sección 2 el martes pasado fue casi completa, permitiendo con ello realizar la actividad planificada. 😀😀😀<br>\n<br>\nAgradeceré que ocurra lo mismo con ambas secciones todas las semanas pues, en cada una intentaremos agregar algo que nos ayude alcanzar el objetivo de la asignatura, que no es solo lograr las aplicaciones a desarrollar sino que hacerlo de un modo similar a como eso ocurre en la realidad"
-  },
-  {
-    "fecha": "2025-03-27 09:46",
-    "mensaje": "Al inicio de esta semana cada uno debería haber seleccionado los <font color='red'>tres proyectos<font color='black'> que más le interesaron y <font color='red'>subido<font color='black'> un PDF justificando y explicando su elección<br><br>Luego...<br><br>Cada grupo decide cuales serán, <font color='blue'>de entre los seleccionados por cada integrante<font color='black'>, <font color='red'>los dos proyectos que desarrollarán durante el semestre<font color='black'><br><br>Esos dos proyectos <font color='red'>deben ser de distinta categoría de complejidad<font color='black'> (A, B o C)<br><br>Comienzan a preparar <font color='red'>el informe que se debe subir antes de las 22:00 de este domingo 30 de marzo<font color='black'> (deben incluir los <font color='red'>criterios y argumentos<font color='black'> usado para decidirse por esos dos proyectos)<br><br>(toda actividad con \"entregas\" es calificada)<br><br>-------------------------------------------------------------------------------------------------------------------------------------"
-  }
-]
+{
+  "avisos": [
+    {
+      "fecha": "2025-04-11 19:53",
+      "mensaje": "Días atrás les envié un mensaje de correo indicando que <font color='blue'>nadie debe faltar a la única sesión presencial de cada semana<font color='black'>. Luego otro informando que <font color='blue'>la asistencia la evaluaría como una nota más.<font color='black'><br>\n<br>\nAhora les informo lo siguiente: <font color='red'>nadie debe faltar este lunes 14 y martes 15 pues se realizará una evaluación individual respecto del primer proyecto que desarrollarán<font color='black'>"
+    },
+    {
+      "fecha": "2025-04-05 23:47",
+      "mensaje": "ASISTENCIA<br>\n<br>\nLa asistencia de la sección 2 el martes pasado fue casi completa, permitiendo con ello realizar la actividad planificada. 😀😀😀<br>\n<br>\nAgradeceré que ocurra lo mismo con ambas secciones todas las semanas pues, en cada una intentaremos agregar algo que nos ayude alcanzar el objetivo de la asignatura, que no es solo lograr las aplicaciones a desarrollar sino que hacerlo de un modo similar a como eso ocurre en la realidad"
+    },
+    {
+      "fecha": "2025-03-27 09:46",
+      "mensaje": "Al inicio de esta semana cada uno debería haber seleccionado los <font color='red'>tres proyectos<font color='black'> que más le interesaron y <font color='red'>subido<font color='black'> un PDF justificando y explicando su elección<br><br>Luego...<br><br>Cada grupo decide cuales serán, <font color='blue'>de entre los seleccionados por cada integrante<font color='black'>, <font color='red'>los dos proyectos que desarrollarán durante el semestre<font color='black'><br><br>Esos dos proyectos <font color='red'>deben ser de distinta categoría de complejidad<font color='black'> (A, B o C)<br><br>Comienzan a preparar <font color='red'>el informe que se debe subir antes de las 22:00 de este domingo 30 de marzo<font color='black'> (deben incluir los <font color='red'>criterios y argumentos<font color='black'> usado para decidirse por esos dos proyectos)<br><br>(toda actividad con \"entregas\" es calificada)<br><br>-------------------------------------------------------------------------------------------------------------------------------------"
+    }
+  ]
+}
