@@ -4,22 +4,24 @@ fetch("https://raw.githubusercontent.com/gmcon/avisos/main/avisos.json")
   .then(data => {
     const avisosContainer = document.getElementById("avisos");
 
-    if (Array.isArray(data)) {
+    const lista = Array.isArray(data) ? data : data.avisos;
+
+    if (Array.isArray(lista)) {
       avisosContainer.innerHTML = ""; // Limpiar
 
-      data.forEach(aviso => {
+      lista.forEach(aviso => {
         const div = document.createElement("div");
         div.className = "aviso";
         div.innerHTML = `<strong>${aviso.fecha}</strong>: ${aviso.mensaje}`;
         avisosContainer.appendChild(div);
       });
 
-      if (data.length === 0) {
+      if (lista.length === 0) {
         avisosContainer.innerText = "No hay avisos nuevos.";
       }
 
     } else {
-      avisosContainer.innerText = data.mensaje || "No hay avisos disponibles.";
+      avisosContainer.innerText = "No hay avisos disponibles.";
     }
   })
   .catch(error => {
